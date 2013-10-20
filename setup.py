@@ -23,7 +23,7 @@ setup_dict = dict(
     maintainer_email=metadata.emails[0],
     url=metadata.url,
     description=metadata.description,
-    long_description=read('README.rst'),
+    long_description=read('README.md'),
     download_url=metadata.url,
     classifiers=[
         'Intended Audience :: Developers',
