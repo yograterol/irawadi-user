@@ -60,7 +60,7 @@ class ManageUser(object):
             cmd = self.cmd_exists_group.format(groupname=kwargs['group'])
 
         result = self._exec_command(cmd)
-        if not result:
+        if result:
             return True
         else:
             return False
