@@ -17,7 +17,10 @@ obj.exists(user='example') # or obj.exists(group='example')
 
 Create a user
 =============
-Method for create users in the system.
+
+```python
+obj.create(**kwargs)
+"""Method for create users in the system.
     Arg:
         **kwargs:
             b: base directory for the home directory of
@@ -37,7 +40,5 @@ Method for create users in the system.
         False: If the user is't create.
     Exception:
         UserExist
-
-```python
-obj.create(**kwargs)
+"""
 ```
