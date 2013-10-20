@@ -16,7 +16,7 @@ obj.exists(user='example') # or obj.exists(group='example')
 ```
 
 Create a user
-=============
+-------------
 
 ```python
 obj.create(**kwargs)
@@ -42,3 +42,23 @@ obj.create(**kwargs)
         UserExist
 """
 ```
+
+Update a user password
+-------------
+
+```python
+obj.update_password(**kwargs)
+"""Change the user password.
+
+    Arg:
+        **kwargs:
+            user: The user name.
+            password: The user password
+    Return:
+        True: If the user exist.
+        False: If the user don't exist.
+    Exception:
+        UserNotExist
+"""
+```
+
