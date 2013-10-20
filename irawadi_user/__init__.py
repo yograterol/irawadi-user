@@ -138,7 +138,7 @@ class ManageUser(object):
             False: If the user is't deleted.
         """
         if self.exists(user=user):
-            cmd = 'userdel', user
+            cmd = 'userdel -r -f ' + user
             self._exec_command(cmd)
             return True
         else:
