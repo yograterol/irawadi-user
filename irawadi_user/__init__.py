@@ -37,6 +37,7 @@ class ManageUser(object):
         super(ManageUser, self).__init__()
 
     def _exec_command(self, cmd):
+        print cmd
         action = sub.Popen(cmd, stdout=sub.PIPE, shell=True)
         (output, error) = action.communicate()
         return error or output
