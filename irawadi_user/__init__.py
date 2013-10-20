@@ -122,8 +122,8 @@ class ManageUser(object):
         """
         if self.exists(user=kwargs['user']):
             proc = sub.Popen(['passwd', kwargs['user'], '--stdin'], stdin=PIPE)
-            proc.stdin.write(kwargs['password'] + '\n'))
-            proc.stdin.write(kwargs['password']))
+            proc.stdin.write(kwargs['password'] + '\n')
+            proc.stdin.write(kwargs['password'])
             proc.stdin.flush()
             return True
         else:
