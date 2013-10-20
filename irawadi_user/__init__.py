@@ -95,9 +95,9 @@ class ManageUser(object):
 
             for key, value in kwargs.iteritems():
                 if not key is 'user':
-                    cmd = cmd, '-' + str(key), str(value)
+                    cmd = cmd + ' -' + str(key) + ' ' + str(value)
                 else:
-                    cmd = cmd, value
+                    cmd = cmd + ' ' + value
 
             self._exec_command(cmd)
 
