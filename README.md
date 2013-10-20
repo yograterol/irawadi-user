@@ -62,3 +62,19 @@ obj.update_password(**kwargs)
 """
 ```
 
+Delete a user 
+-------------
+
+```python
+obj.delete(user)
+"""Delete a user system.
+    Arg:
+        **kwargs:
+            user: The user name.
+    Return:
+        True: If the user is deleted.
+        False: If the user is't deleted.
+    Exception:
+        UserNotExist
+"""
+```
