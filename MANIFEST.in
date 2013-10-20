@@ -1,4 +1,2 @@
-include README.rst
-include requirements-dev.txt
-include requirements.txt
+include README.md
 include setup.py
