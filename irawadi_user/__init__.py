@@ -123,6 +123,7 @@ class ManageUser(object):
         if self.exists(user=kwargs['user']):
             proc = sub.Popen(['passwd', kwargs['user'], '--stdin'])
             proc.communicate(kwargs['password'])
+            proc.communicate(kwargs['password'])
             return True
         else:
             raise UserNotExist()
