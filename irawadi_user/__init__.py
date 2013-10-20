@@ -121,7 +121,7 @@ class ManageUser(object):
             UserNotExist
         """
         if self.exists(user=kwargs['user']):
-            proc = sub.Popen(['passwd', kwargs['user'], '--stdin'], stdin=PIPE)
+            proc = sub.Popen(['passwd', kwargs['user'], '--stdin'], stdin=sub.PIPE)
             proc.stdin.write(kwargs['password'] + '\n')
             proc.stdin.write(kwargs['password'])
             proc.stdin.flush()
