@@ -30,8 +30,8 @@ class GroupNotExist(Exception):
 
 
 class ManageUser(object):
-    cmd_exists_user = 'egrep -i "^{username}" /etc/passwd'
-    cmd_exists_group = 'egrep -i "^{groupname}" /etc/group'
+    cmd_exists_user = 'egrep "^{username}" /etc/passwd'
+    cmd_exists_group = 'egrep "^{groupname}" /etc/group'
 
     def __init__(self):
         super(ManageUser, self).__init__()
