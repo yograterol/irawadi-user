@@ -15,7 +15,7 @@ obj = ManageUser()
 obj.exists(user='example') # or obj.exists(group='example')
 ```
 
-Create a user
+Create an user
 -------------
 
 ```python
@@ -43,7 +43,7 @@ obj.create(**kwargs)
 """
 ```
 
-Update a user password
+Update an user password
 -------------
 
 ```python
@@ -62,7 +62,7 @@ obj.update_password(**kwargs)
 """
 ```
 
-Delete a user 
+Delete an user 
 -------------
 
 ```python
